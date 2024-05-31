@@ -35,7 +35,7 @@ const signup = async (req, res) => {
       username: username,
       email: email,
       password: password,
-      admin: false,
+      admin: true,
     });
   } catch {
     res.setHeader("Content-Type", "application/json");
